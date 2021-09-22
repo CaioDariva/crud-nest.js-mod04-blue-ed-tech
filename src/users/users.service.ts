@@ -28,7 +28,7 @@ export class UsersService {
         _id: id,
       },
       {
-        updateUserDto,
+        $set: updateUserDto,
       },
       {
         new: true,
@@ -36,7 +36,7 @@ export class UsersService {
     );
   }
 
-  remove(id: number) {
+  remove(id: string) {
     return this.userModel
       .deleteOne({
         _id: id,
