@@ -5,7 +5,7 @@ import { UsersModule } from './users/users.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://caiodariva:pBxrCLuVONenlC9m@caiomongo.5kpn2.mongodb.net/Modulo4?retryWrites=true&w=majority',
+      'mongodb+srv://caiodariva:SENHA@caiomongo.5kpn2.mongodb.net/Modulo4?retryWrites=true&w=majority',
     ),
     UsersModule,
   ],
